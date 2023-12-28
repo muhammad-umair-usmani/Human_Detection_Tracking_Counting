@@ -1,0 +1,4 @@
+train: /content/drive/MyDrive/Human_Detection/dataset/images/train
+val: /content/drive/MyDrive/Human_Detection/dataset/images/val
+nc: 1
+names: ['Human']
