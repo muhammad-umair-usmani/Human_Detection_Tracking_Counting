@@ -8,7 +8,7 @@
 <div align="center">
 <p float="left">
 
-  <a href="https://youtu.be/DSO-4VsWjX8"><img src="./video/clipped_joined_video.gif" width="800" /></a>
+  <a href="https://youtu.be/DSO-4VsWjX8"><img src="./video/clipped_crowd_street.gif" width="800" /></a>
 </p>
 </div>
 
@@ -111,9 +111,52 @@ python detect.py --weights yolov5s.pt --source 0                               #
 ```
 
 </details>
-<!-- <details open> -->
+<details open>
 
-<!-- ### Human Tracking and counting -->
+### Human Tracking and Counting
+
+### Human detection, Tracking and Counting, utilize the [![Notebook]()](https://github.com/muhammad-umair-usmani/Human_Detection_Tracking_Counting/blob/main/human_detection_tracking_counting.ipynb)
+<details>
+<summary><b>Tracking methods</b></summary>
+
+```bash
+$ python track.py --tracking-method deepocsort
+                                    strongsort
+                                    ocsort
+                                    bytetrack
+                                    botsort
+```
+</details>
+
+<details>
+<summary>Select ReID model</summary>
+
+Some tracking methods combine appearance description and motion in the process of tracking. For those which use appearance, you can choose a ReID model based on your needs from this [ReID model zoo](https://kaiyangzhou.github.io/deep-person-reid/MODEL_ZOO). These model can be further optimized for you needs by the [reid_export.py](https://github.com/mikel-brostrom/yolo_tracking/blob/master/boxmot/deep/reid_export.py) script
+
+```bash
+$ python examples/track.py --source 0 --reid-model lmbn_n_cuhk03_d.pt               # lightweight
+                                                   osnet_x0_25_market1501.pt
+                                                   mobilenetv2_x1_4_msmt17.engine
+                                                   resnet50_msmt17.onnx
+                                                   osnet_x1_0_msmt17.pt
+                                                   clip_market1501.pt               # heavy
+                                                   clip_vehicleid.pt
+                                                   ...
+```
+
+</details>
+
+<details>
+
+```bash
+$ python track.py --tracking-method strongsort 
+                  --reid-model osnet_x1_0_dukemtmcreid.pt  
+                  --yolo-model ./crowd_human_best.pt
+                  --input-path ./video/crowd_street.mp4 
+                  --output-path ./video/output_crowd_street.mp4
+```
+</details>
+</details>
 
 
 
