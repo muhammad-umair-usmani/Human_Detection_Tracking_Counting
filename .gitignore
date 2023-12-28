@@ -1,0 +1,14 @@
+
+.*
+!/.gitignore
+
+
+# interpreter bytecode
+__pycache__/
+
+
+# experiment results videos
+video/joined_video.gif
+yolov5/runs_wider_person.zip
+yolov5/crowdhuman_runs.zip
+
