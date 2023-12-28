@@ -115,7 +115,7 @@ python detect.py --weights yolov5s.pt --source 0                               #
 
 ### Human Tracking and Counting
 
-### Human detection, Tracking and Counting, utilize the [![Notebook]()](https://github.com/muhammad-umair-usmani/Human_Detection_Tracking_Counting/blob/main/human_detection_tracking_counting.ipynb)
+### For Human detection, Tracking and Counting, utilize the [![Notebook]()](https://github.com/muhammad-umair-usmani/Human_Detection_Tracking_Counting/blob/main/human_detection_tracking_counting.ipynb)
 <details>
 <summary><b>Tracking methods</b></summary>
 
