@@ -113,7 +113,7 @@ python detect.py --weights yolov5s.pt --source 0                               #
 
 ### Human Tracking and Counting
 
-<b>For Human detection, Tracking and Counting, utilize the [![Notebook]()](https://github.com/muhammad-umair-usmani/Human_Detection_Tracking_Counting/blob/main/human_detection_tracking_counting.ipynb)</b>
+#### For Human detection, Tracking and Counting, utilize the [Notebook file](https://github.com/muhammad-umair-usmani/Human_Detection_Tracking_Counting/blob/main/human_detection_tracking_counting.ipynb)
 
 <details open>
 <summary><b>Tracking methods</b></summary>
@@ -128,7 +128,7 @@ $ python track.py --tracking-method deepocsort
 </details>
 
 <details open>
-<summary>Select ReID model</summary>
+<summary><b>Select ReID model</b></summary>
 
 Some tracking methods combine appearance description and motion in the process of tracking. For those which use appearance, you can choose a ReID model based on your needs from this [ReID model zoo](https://kaiyangzhou.github.io/deep-person-reid/MODEL_ZOO). These model can be further optimized for you needs by the [reid_export.py](https://github.com/muhammad-umair-usmani/Human_Detection_Tracking_Counting/blob/master/boxmot/deep/reid_export.py) script
 
